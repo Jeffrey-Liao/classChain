@@ -1,0 +1,4 @@
+﻿  正在扫描源以查找模块依赖项...
+  Source.cpp
+E:\program\C_C++Project\program\AI\AI\Chain.h(526): warning C4172: 返回局部变量或临时变量的地址
+  AI.vcxproj -> E:\program\C_C++Project\program\AI\x64\Debug\AI.exe
