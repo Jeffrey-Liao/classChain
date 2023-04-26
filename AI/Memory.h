@@ -25,14 +25,14 @@ namespace Manipulate
 		}
 	private:
 		void Extend(TYPE* OldSpace,unsigned int* OldField)
-		{
+			{
 			for (int n = 0;n!=MEMOSIZE(OldSpace);n++)
 				this->Space[n] = OldSpace[n];
 			for (int n = 0; n != MEMOSIZE(OldField); n++)
 				this->DataInfor[n] = OldField[n];
 		}
 		void Clearify()
-		{
+				{
 			for (int n = 0; n != MEMOSIZE(DataInfor); n++)
 				this->DataInfor[n] = 0;
 		}
@@ -41,7 +41,7 @@ namespace Manipulate
 			int totalSize = this->size();
 			if (totalSize % 2 != 0)
 				totalSize = totalSize / 2 + 1;
-			else
+					else
 				totalSize = totalSize / 2;
 			for (int n =0;n!=totalSize;n++)
 			{
@@ -60,7 +60,7 @@ namespace Manipulate
 			for (int n = 0; n != MEMOSIZE(DataInfor); n++)
 				result = result && signal == DataInfor[n];
 			return result;
-		}
+				}
 		Allocator():Space(NULL),DataInfor(NULL)
 		{}
 		TYPE* Allocate(int size)
@@ -92,7 +92,7 @@ namespace Manipulate
 		}
 		void DeAllocate(TYPE* Position)
 		{
-
+			
 		}
 		void Clear()
 		{

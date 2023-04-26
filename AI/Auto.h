@@ -33,7 +33,7 @@ namespace Manipulate
 		STRUCT
 	};
 	class Auto
-	{
+		{
 	private:
 		void* Data;
 		AutoTypes Type;
@@ -70,9 +70,9 @@ namespace Manipulate
 		Auto() :Type(AutoTypes::EMPTY), Const(0), Data(NULL)
 		{}
 		 Auto(int inData,bool inConst = 0)
-		 {
+		{
 			Assign<int>(inData, inConst);
-		 }
+		}
 		Auto(char inData, bool inConst = 0)
 		{
 			Assign<char>(inData, inConst);
@@ -156,7 +156,7 @@ namespace Manipulate
 			return ASUNSIGNED(Data);
 		}
 		friend ostream& operator<<(ostream& Out, Auto& Obj)
-		{
+	{
 			if (Obj.Type == AutoTypes::INT)
 				Out << ASINT(Obj.Data);
 			else if (Obj.Type == AutoTypes::CHAR)

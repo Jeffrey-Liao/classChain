@@ -134,6 +134,7 @@
     <ClInclude Include="Auto.h" />
     <ClInclude Include="Chain.h" />
     <ClInclude Include="DyStruct.h" />
+    <ClInclude Include="Errors.h" />
     <ClInclude Include="Graph.h" />
     <ClInclude Include="Matrix.h" />
     <ClInclude Include="Node.h" />
